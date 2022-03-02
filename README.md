@@ -28,7 +28,8 @@ If the intended solution is to use gmail, you'll have to [make an app specific p
 - `--email`, The email you want to send the results of the script run to.  (If not provided, output will be to console.)
 
 ## Example Script Output
-When I ran the script on the evening of Feb 3rd, 2022, this was the console output I received.
+When I ran the scriptusing below command on Feb 3rd, 2022, this was the console output I received.
+
 **python main.py --org PyGithub --repo PyGithub --timeframe 20**
 ```
 Script Output:
