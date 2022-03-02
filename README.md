@@ -19,6 +19,7 @@ In order to have the output sent as an email, you must create a `credentials.jso
     "password": "SoAndSoSPasSWord"
 }
 ```
+
 If the intended solution is to use gmail, you'll have to [make an app specific password](https://support.google.com/accounts/answer/185833?hl=en) and use that password in the credential.json file.  In addition, the `--email` parameter must be provided to the script.
 
 ## Argument Reference
