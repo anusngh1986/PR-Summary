@@ -6,7 +6,9 @@ A python script to retrieve a summary of all opened, closed, and in progress pul
 2. Install python request module using commad **"pip install requests"**
 
 ## Script Usage
-A simple makefile has been provided to facilitate running this python project.  Simply type `make run` and this project will scan against PyGithub/PyGithub.  If you wish to run this script against a different project, execute the main.py file in this directory with the provided arguments in the next section. `make test` and `make test-verbose` will execute the unit tests for this project. I am using Python 3.9.2.
+
+Script start with main.py.
+**python main.py --org PyGithub --repo PyGithub --email anusngh1986@gmail.com**
 
 In order to have the output sent as an email, you must create a `credentials.json` file in the same directory as `main.py`.  This file should look something like this:
 ``` json
@@ -31,7 +33,7 @@ When I ran the script on the evening of Feb 3rd, 2022, this was the console outp
 ```
 Script Output:
 FROM: no-reply@gmail.com.com
-TO: notprovided@nodomain.com
+TO: notprovided@gmail.com.com
 SUBJECT: Pull Request report for PyGithub/PyGithub for the 7 days preceding 2022-03-01
 BODY:
 Greetings!
@@ -47,17 +49,3 @@ PR #2186 - Initial commit by POCO by manju-prasad - Link: https://github.com/PyG
 PR #2185 - Initial commit by POCO Orig by manju-prasad - Link: https://github.com/PyGithub/PyGithub/pull/2185
 PR #2184 - Use 'requests' instead of 'httplib' by manju-prasad - Link: https://github.com/PyGithub/PyGithub/pull/2184
 ```
-
-## Control Flow of script
-
-Script start with main.py.
-
-**python main.py --org PyGithub --repo PyGithub**
-
-
-
-
-
-
-
-
