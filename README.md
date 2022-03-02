@@ -1,6 +1,10 @@
 # PR-Summary
 A python script to retrieve a summary of all opened, closed, and in progress pull requests for a given Github repository within some time frame, with email output.
 
+## Prerequisite
+1. Python with version 3.8 or above should be in machine.
+2. Install python request module using commad **"pip install requests"**
+
 ## Script Usage
 A simple makefile has been provided to facilitate running this python project.  Simply type `make run` and this project will scan against PyGithub/PyGithub.  If you wish to run this script against a different project, execute the main.py file in this directory with the provided arguments in the next section. `make test` and `make test-verbose` will execute the unit tests for this project. I am using Python 3.9.2.
 
