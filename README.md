@@ -1,13 +1,15 @@
 # PR-Summary
-A python script to retrieve a summary of all opened, closed, and in progress pull requests for a given Github repository within some time frame, with email output.
+A python utility to retrieve a summary of all opened, closed, and in progress pull requests for a given Github repository within some time frame, with optional email output.
 
 ## Prerequisite
-1. Python with version 3.8 or above should be in machine.
-2. Install python request module using commad **"pip install requests"**
+1. Python with version 3.8 or above should be installed in machine.
+2. Install python request module used for making API calls using below commad.
+
+**"pip install requests"**
 
 ## Script Usage
+Execution of script will start with main.py.
 
-Script start with main.py.
 **python main.py --org PyGithub --repo PyGithub --email anusngh1986@gmail.com**
 
 In order to have the output sent as an email, you must create a `credentials.json` file in the same directory as `main.py`.  This file should look something like this:
@@ -29,7 +31,7 @@ If the intended solution is to use gmail, you'll have to [make an app specific p
 - `--email`, The email you want to send the results of the script run to.  (If not provided, output will be to console.)
 
 ## Example Script Output
-When I ran the scriptusing below command on Feb 3rd, 2022, this was the console output I received.
+When I ran the script using below command on Feb 3rd, 2022.This was the console output I received.
 
 **python main.py --org PyGithub --repo PyGithub --timeframe 20**
 ```
