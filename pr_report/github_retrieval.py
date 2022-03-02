@@ -3,7 +3,7 @@ from .date_parsing import reParseDate
 
 from requests.api import request
 
-def isPRTooOld(PRobj, cutoffTime):
+def isPRTooOld(PRobj, cutoffTime): #Check for update date of PR
     updateTime = PRobj['updated_at']
     PRTime = reParseDate(updateTime)
     return cutoffTime > PRTime
@@ -18,7 +18,7 @@ def get_Recent_PRs(currentDate, timeDelta, org, repo, pr_state = 'all', req_modu
     jsonCollection = []
     page_number = 0
     cutoffDate = getCutoffTime(currentDate, timeDelta)
-    foundCutoff = False
+    foundCutoff = False #Variable to find if we are not going beyond specified days(i.e 7 days).
 
     while (not foundCutoff):
         page_number = page_number + 1
@@ -27,7 +27,7 @@ def get_Recent_PRs(currentDate, timeDelta, org, repo, pr_state = 'all', req_modu
             foundCutoff = True
             break
 
-        index = 0
+        index = 0 #Pointer for moving inside list indices
         while (index < len(requestResult) and not foundCutoff):
             foundCutoff = isPRTooOld(requestResult[index], cutoffDate)
             if (not foundCutoff):
