@@ -1,4 +1,4 @@
-# python-pr-notifier
+# PR-Summary
 A python script to retrieve a summary of all opened, closed, and in progress pull requests for a given Github repository within some time frame, with email output.
 
 ## Script Usage
@@ -46,5 +46,15 @@ PR #2007 - tox.ini: Ignoring long lines and setting max-line-length? by cclauss 
 
 ```
 
-## Notes about this script
-This script should handle the github api's pagination that occurs if too many results were returned, for example if it was run against a really busy repo.  If that was done unauthenticated, however, the script may not complete or may error out because of the unauthenticated rate limit of 60 requests per hour.
+## Control Flow of script
+
+Script start with main.py.
+**python main.py --org PyGithub --repo PyGithub**
+
+
+
+
+
+
+
+
