@@ -20,7 +20,7 @@ def get_Recent_PRs(currentDate, timeDelta, org, repo, pr_state = 'all', req_modu
     cutoffDate = getCutoffTime(currentDate, timeDelta)
     foundCutoff = False #Variable to find if we are not going beyond specified days(i.e 7 days).
 
-    while (not foundCutoff):
+    while (not foundCutoff): # loop to go through each per in a page till we find pr too old to ignore
         page_number = page_number + 1
         requestResult = get_PRs(org,repo,pr_state,page_number,req_module).json()
         if (requestResult == []): # We've exceeded the number of pages
