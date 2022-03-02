@@ -22,28 +22,26 @@ If the intended solution is to use gmail, you'll have to [make an app specific p
 - `--email`, The email you want to send the results of the script run to.  (If not provided, output will be to console.)
 
 ## Example Script Output
-When I ran the script on the evening of October 4th, 2021, this was the console output I received.
+When I ran the script on the evening of Feb 3rd, 2022, this was the console output I received.
 
 ```
 Script Output:
-FROM: no-reply@ansonscript.com
+FROM: no-reply@gmail.com.com
 TO: notprovided@nodomain.com
-SUBJECT: Pull Request report for PyGithub/PyGithub for the 7 days preceding 2021-10-04
+SUBJECT: Pull Request report for PyGithub/PyGithub for the 7 days preceding 2022-03-01
 BODY:
 Greetings!
 
 Pull Requests Opened:
-PR #2068 - Pass a required parameter (headers) to GithubException constructor. by akhilg - Link: https://github.com/PyGithub/PyGithub/pull/2068
-PR #2066 - Add support for merge-upstream Repository action by deriamis - Link: https://github.com/PyGithub/PyGithub/pull/2066
-Pull Requests In Progress:
-PR #1951 - Add support for workflow jobs and steps by Tenzer - Link: https://github.com/PyGithub/PyGithub/pull/1951
-PR #1985 - Add Artifact class and WorkflowRun.get_artifacts by yixinguo2 - Link: https://github.com/PyGithub/PyGithub/pull/1985
-PR #1986 - Support full GitHub app authentication by dblanchette - Link: https://github.com/PyGithub/PyGithub/pull/1986
-PR #2006 - Add Github Actions Secrets to organization by peresypkinamarina - Link: https://github.com/PyGithub/PyGithub/pull/2006
-PR #2063 - ADD code scanning results by eric-nieuwland - Link: https://github.com/PyGithub/PyGithub/pull/2063
+PR #2190 - Get all secrets from org by gerardsegarra - Link: https://github.com/PyGithub/PyGithub/pull/2190
+PR #2189 - Initial commit by POCO by manju-prasad - Link: https://github.com/PyGithub/PyGithub/pull/2189
+PR #2183 - feat: no update git refs method  by mittal-umang - Link: https://github.com/PyGithub/PyGithub/pull/2183
 Pull Requests Closed:
-PR #2007 - tox.ini: Ignoring long lines and setting max-line-length? by cclauss - Link: https://github.com/PyGithub/PyGithub/pull/2007
-
+PR #2188 - Initial commit by POCO by manju-prasad - Link: https://github.com/PyGithub/PyGithub/pull/2188
+PR #2187 - Initial commit by POCO by manju-prasad - Link: https://github.com/PyGithub/PyGithub/pull/2187
+PR #2186 - Initial commit by POCO by manju-prasad - Link: https://github.com/PyGithub/PyGithub/pull/2186
+PR #2185 - Initial commit by POCO Orig by manju-prasad - Link: https://github.com/PyGithub/PyGithub/pull/2185
+PR #2184 - Use 'requests' instead of 'httplib' by manju-prasad - Link: https://github.com/PyGithub/PyGithub/pull/2184
 ```
 
 ## Control Flow of script
