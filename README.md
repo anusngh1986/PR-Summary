@@ -29,20 +29,23 @@ If the intended solution is to use gmail, you'll have to [make an app specific p
 
 ## Example Script Output
 When I ran the script on the evening of Feb 3rd, 2022, this was the console output I received.
-
+**python main.py --org PyGithub --repo PyGithub --timeframe 20**
 ```
 Script Output:
 FROM: no-reply@gmail.com.com
-TO: notprovided@gmail.com.com
-SUBJECT: Pull Request report for PyGithub/PyGithub for the 7 days preceding 2022-03-01
+TO: notprovided@nodomain.com
+SUBJECT: Pull Request report for PyGithub/PyGithub for the 20 days preceding 2022-03-02
 BODY:
 Greetings!
 
-Pull Requests Opened:
+**Pull Requests Opened:**
 PR #2190 - Get all secrets from org by gerardsegarra - Link: https://github.com/PyGithub/PyGithub/pull/2190
 PR #2189 - Initial commit by POCO by manju-prasad - Link: https://github.com/PyGithub/PyGithub/pull/2189
 PR #2183 - feat: no update git refs method  by mittal-umang - Link: https://github.com/PyGithub/PyGithub/pull/2183
-Pull Requests Closed:
+PR #2172 - Fix get events not returning user events by ncareau - Link: https://github.com/PyGithub/PyGithub/pull/2172
+**Pull Requests In Progress:**
+PR #2090 - Create repo from template by simkimsia - Link: https://github.com/PyGithub/PyGithub/pull/2090
+**Pull Requests Closed:**
 PR #2188 - Initial commit by POCO by manju-prasad - Link: https://github.com/PyGithub/PyGithub/pull/2188
 PR #2187 - Initial commit by POCO by manju-prasad - Link: https://github.com/PyGithub/PyGithub/pull/2187
 PR #2186 - Initial commit by POCO by manju-prasad - Link: https://github.com/PyGithub/PyGithub/pull/2186
